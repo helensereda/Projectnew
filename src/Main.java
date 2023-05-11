@@ -4,12 +4,12 @@ class Main {
     public static void main(String[] args) {
         //getSeason();
         //getMonth();
-        getNumber();
+        //getNumber();
         //getTemperature();
         //getColor();
         //whileLoop();
         //forLoop();
-        //forScan();
+        forScan();
         //plusSeven();
         //minusFive();
         //getSquare();
@@ -144,6 +144,7 @@ public static void forScan() {
         }
     }
 }
+
 //4.
 
     public static void plusSeven() {
