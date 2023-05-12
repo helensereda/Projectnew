@@ -2,18 +2,20 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
+        //Condition operators
         //getSeason();
         //getMonth();
         //getNumber();
         //getTemperature();
         //getColor();
+
+        //Loops
         //whileLoop();
         //forLoop();
-        forScan();
+        //forScan();
         //plusSeven();
         //minusFive();
         //getSquare();
-
     }
 
     //1.
@@ -25,16 +27,16 @@ class Main {
         String Season;
 
         switch (numeral) {
-            case 1,2,12:
+            case 1, 2, 12:
                 Season = "Winter";
                 break;
-            case 3,4,5:
+            case 3, 4, 5:
                 Season = "Spring";
                 break;
-            case 6,7,8:
+            case 6, 7, 8:
                 Season = "Summer";
                 break;
-            case 9,10,11:
+            case 9, 10, 11:
                 Season = "Autumn";
                 break;
 
@@ -48,7 +50,7 @@ class Main {
     //2.
     public static void getMonth() {
         Scanner enter = new Scanner(System.in);
-        System.out.print("Please, enter your season: ");
+        System.out.print("Please, enter your number season: ");
         int month = enter.nextInt();
 
         if (month == 1 || month == 2 || month == 12) {
@@ -57,21 +59,24 @@ class Main {
             System.out.print("Spring");
         } else if (month == 6 || month == 7 || month == 8) {
             System.out.print("Summer");
-        } else {
+        } else if (month == 9 || month == 10 || month == 11) {
             System.out.print("Autumn");
+        } else {
+            System.out.print("");
         }
     }
+
 
     //3.
     public static void getNumber() {
 
-            int number = 10;
-            if (number % 2 == 0) {
-                System.out.print("Четное число");
-            } else {
-                System.out.print("Нечетное число");
-            }
+        int number = 1;
+        if (number % 2 == 0) {
+            System.out.print("Четное число");
+        } else {
+            System.out.print("Нечетное число");
         }
+    }
 
     //4.
     public static void getTemperature() {
@@ -108,13 +113,12 @@ class Main {
         }
     }
 
-    //Циклы
+    //Loops
     //1.
     public static void whileLoop() {
 
-        for (int i = 1;  i <= 99; i++) {
-            if (i % 2 != 0)
-            {
+        for (int i = 1; i <= 99; i++) {
+            if (i % 2 != 0) {
                 System.out.println(i);
             }
         }
@@ -123,66 +127,55 @@ class Main {
     //2.
     public static void forLoop() {
         int i = 5;
-        while (i>0)
-
-            {
-                System.out.println(i);
-                i--;
-            }
-    }
-
-//3.
-public static void forScan() {
-    Scanner enter = new Scanner(System.in);
-    System.out.print("Введите любое целое положительное число: ");
-    int n = enter.nextInt();
-    int sum = 0;
-    for (int i = 1; i<=n; i++) {
-        sum = sum+i;
-        {
-            System.out.println(sum);
+        while (i > 0) {
+            System.out.println(i);
+            i--;
         }
     }
-}
+
+    //3.
+    public static void forScan() {
+        Scanner enter = new Scanner(System.in);
+        System.out.print("Введите любое целое положительное число: ");
+        int n = enter.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum = sum + i;
+        }
+            {
+                System.out.println(sum);
+            }  // выводит
+        }
+
 
 //4.
 
     public static void plusSeven() {
-        int i =7;
-        while (i<=98)
-         {
+        int i = 7;
+        while (i <= 98) {
             System.out.println(i);
-          i=i+7;
+            i = i + 7;
         }
 
     }
 
-//5.
+    //5.
     public static void minusFive() {
-
-        for (int i=0; i>-50; i= i-5)
-
-        {
+        int sum = 0;
+        for (int i = 0; i >= -45; i = i - 5) {
             System.out.println(i);
-
-
-        }
-    }
-    //6.
-
-    public static void getSquare() {
-
-        for (int i=10; i<=20; i++)
-
-        {
-            System.out.println(i*i);
-
         }
     }
 
-}
+        //6.
 
+        public static void getSquare () {
 
+            for (int i = 10; i <= 20; i++) {
+                System.out.println(i * i);
 
+            }
+        }
+    }
 
 
