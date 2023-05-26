@@ -1,22 +1,39 @@
 package Figures;
 
-
 public class Mymain {
     public static void main(String[] args) {
 
-        Figure[] figures = new Figure[5];
-        figures[0] = new Triangle(3, 4, 5);
-        figures[1] = new Rectangle(4, 5);
-        figures[2] = new Circle(2);
-        figures[3] = new Triangle(5, 12, 13);
-        figures[4] = new Rectangle(6, 8);
+
+
+        Figure[] figures = {
+                new Triangle ("Triangle", 5,6,8),
+                new Rectangle ("Rectangle", 5,7),
+                new Circle ( "Circle", 2),
+                new Triangle("Triangle1", 5,8,10),
+                new Circle( "Circle1", 6),
+        };
+
+
+        for (int i =0; i < figures.length; i++)
+        {
+            System.out.println("Aria" + ":" + figures[i].getFigureName() + "-" + figures[i].getAria());
+        }
+        System.out.println("");
+
+        for (int i =0; i < figures.length; i++)
+        {
+
+            System.out.println("Perimeter" + ":" + figures[i].getFigureName() + "-" + figures[i].getPerimeter());
+        }
+
 
         double perimeterSum = 0;
+        for (int i =0; i < figures.length; i++)
+            perimeterSum += figures[i].getPerimeter();
 
-        for (Figure fig : figures) {
-            perimeterSum += fig.getPerimeter();
-
-            System.out.println("Сумма периметров всех фигур равна: " + perimeterSum);
+        {
+            System.out.println();
+            System.out.println("Sum of perimeterSum of all figures is : " + perimeterSum);
         }
     }
 }

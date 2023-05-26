@@ -1,5 +1,4 @@
 package Figures;
-
     public abstract class Figure {
 
         private String figureName;

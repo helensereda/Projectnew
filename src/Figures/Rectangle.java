@@ -1,16 +1,15 @@
 package Figures;
 
-
 public class Rectangle extends Figure {
+    private String figureName;
     private double width;
     private double height;
 
-    public Rectangle(double width, double height) {
+    public Rectangle(String figureName, double width, double height) {
+        super(figureName);
         this.width = width;
         this.height = height;
     }
-
-
 
     @Override
     public double getAria() {
