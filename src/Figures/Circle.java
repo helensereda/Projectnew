@@ -2,9 +2,12 @@ package Figures;
 
 public class Circle extends Figure {
     private double radius;
+    private String figureName;
 
-    public Circle (double radius) {
+    public Circle (String figureName, double radius) {
+        super(figureName);
         this.radius = radius;
+
     }
 
 
