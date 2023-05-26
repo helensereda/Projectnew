@@ -1,8 +1,5 @@
 package Figures;
-import Figures.Figure;
-import Figures.Triangle;
-import Figures.Rectangle;
-import Figures.Circle;
+
 
 public class Mymain {
     public static void main(String[] args) {
