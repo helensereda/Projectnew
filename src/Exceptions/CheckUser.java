@@ -34,7 +34,7 @@ public class CheckUser {
         if (login.length() >= 20 || login.contains(" ")) {
             throw new WrongLoginException("Wrong login format");
         }
-        if (password.length() >= 20 || password.contains(" ") || !password.matches("^[a-zA-Z0-9_.-]*$")) {
+        if (password.length() >= 20 || password.contains(" ") || !password.matches("^[a-zA-Z0-9_.-]*$")) { // не знаю какой правильно выбрать regex для ввода цифр?????
             throw new WrongPasswordException("Wrong password format");
         }
         if (!password.equals(confirmPassword)) {
